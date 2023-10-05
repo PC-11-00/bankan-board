@@ -1,0 +1,149 @@
+/* KanbanBoard.css */
+
+/* Styling for the Kanban board */
+.kanban-board {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the Kanban header */
+.kanban-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-header h1 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Styling for the dropdown button and menu */
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styling for the Kanban column container */
+.kanban-columns-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+/* Styling for the Kanban column */
+.kanban-column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 300px;
+  flex: 1;
+}
+
+.kanban-column h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Styling for the Kanban card */
+.kanban-card {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  width: 100%;
+}
+
+.kanban-card:last-child {
+  margin-bottom: 0;
+}
+
+.kanban-card:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.kanban-card h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.kanban-card p {
+  font-size: 14px;
+  color: #777;
+}
+/* Styling for the card list container within columns */
+.card-list {
+  display: flex; /* Display cards side by side */
+  flex-direction: column; /* Arrange cards in a row */
+  flex-wrap: nowrap; /* Prevent cards from wrapping */
+  overflow-x: auto; /* Add horizontal scroll if cards exceed container width */
+}
+
+/* Separate header from cards */
+.kanban-header {
+  margin-bottom: 20px;
+}
